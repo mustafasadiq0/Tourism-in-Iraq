@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معالم العراق - الدينية والتراثية والأثرية والسياحية</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(to left, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin: 2rem 0;
+            color: #1a2a6c;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(to left, #1a2a6c, #b21f1f, #fdbb2d);
+        }
+        
+        .landmarks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .landmark-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .landmark-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .landmark-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .landmark-content {
+            padding: 1.5rem;
+        }
+        
+        .landmark-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #1a2a6c;
+        }
+        
+        .landmark-description {
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: #1a2a6c;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-text {
+            margin-bottom: 1rem;
+        }
+        
+        .credits {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .landmarks-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .landmarks-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>معالم العراق</h1>
+            <p class="subtitle">اكتشف روعة المعالم الدينية والتراثية والأثرية والسياحية في بلاد الرافدين</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section>
+            <h2 class="section-title">المعالم الدينية</h2>
+            <div class="landmarks-grid">
+                <div class="landmark-card">
+                    <img src="images/kadhimiya_shrine_dome.jpeg" alt="العتبة الكاظمية" class="landmark-image">
+                    <div class="landmark-content">
+                        <h3 class="landmark-title">العتبة الكاظمية</h3>
+                        <p class="landmark-description">تقع العتبة الكاظمية المقدسة في منطقة الكاظمية شمال بغداد، وتضم مرقدي الإمامين موسى الكاظم ومحمد الجواد. تتميز بقبابها الذهبية ومآذنها الشامخة، وتعتبر من أهم المزارات الدينية للمسلمين الشيعة في العراق.</p>
+                    </div>
+                </div>
+                
+                <div class="landmark-card">
+                    <img src="images/imam_ali_shrine.jpeg" alt="العتبة العلوية" class="landmark-image">
+                    <div class="landmark-content">
+                        <h3 class="landmark-title">العتبة العلوية</h3>
+                        <p class="landmark-description">تقع العتبة العلوية المقدسة في مدينة النجف، وتضم مرقد الإمام علي بن أبي طالب. تتميز بقبتها الذهبية الضخمة ومآذنها المذهبة، وتعتبر من أقدس المزارات الدينية في العالم الإسلامي.</p>
+                    </div>
+                </div>
+                
+                <div class="landmark-card">
+                    <img src="images/imam_hussein_shrine.jpeg" alt="العتبة الحسينية" class="landmark-image">
+                    <div class="landmark-content">
+                        <h3 class="landmark-title">العتبة الحسينية</h3>
+                        <p class="landmark-description">تقع العتبة الحسينية المقدسة في مدينة كربلاء، وتضم مرقد الإمام الحسين بن علي. تتميز بقبتها الذهبية التي يبلغ ارتفاعها 37 متراً، ومآذنها المطلية بالذهب. تعتبر من أهم المزارات الدينية للمسلمين الشيعة في العالم.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2 class="section-title">المعالم التراثية والأثرية</h2>
+            <div class="landmarks-grid">
+                <div class="landmark-card">
+                    <img src="images/ziggurat_of_ur.jpeg" alt="زقورة أور" class="landmark-image">
+                    <div class="landmark-content">
+                        <h3 class="landmark-title">زقورة أور</h3>
+                        <p class="landmark-description">تعد زقورة أور من أقدم المعابد التي بقيت في العراق، وتقع على بعد 40 كم غرب مدينة الناصرية. بناها الملك السومري أور نمو مؤسس سلالة أور الثالثة حوالي 2100 ق.م. تتميز بتصميمها المستطيل وطبقاتها المتعددة.</p>
+                    </div>
+                </div>
+                
+                <div class="landmark-card">
+                    <img src="images/babylon_ruins.png" alt="مدينة بابل الأثرية" class="landmark-image">
+                    <div class="landmark-content">
+                        <h3 class="landmark-title">مدينة بابل الأثرية</h3>
+                        <p class="landmark-description">تقع مدينة بابل الأثرية على بعد 85 كم جنوب بغداد، وهي من أشهر المدن التاريخية في العالم. اشتهرت بحدائقها المعلقة وبوابة عشتار المزخرفة وشارع الموكب. أدرجتها منظمة اليونسكو على لائحة التراث العالمي عام 2019.</p>
+                    </div>
+                </div>
+                
+                <div class="landmark-card">
+                    <img src="images/erbil_citadel.jpeg" alt="قلعة أربيل" class="landmark-image">
+                    <div class="landmark-content">
+                        <h3 class="landmark-title">قلعة أربيل</h3>
+                        <p class="landmark-description">تقع قلعة أربيل في مركز مدينة أربيل بإقليم كردستان العراق، وتعتبر من أقدم المواقع المأهولة باستمرار في العالم. يعود تاريخها إلى الألفية الخامسة قبل الميلاد، وقد أدرجتها اليونسكو على قائمة التراث العالمي عام 2014.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2 class="section-title">المعالم السياحية</h2>
+            <div class="landmarks-grid">
+                <div class="landmark-card">
+                    <img src="images/iraqi_marshes.jpeg" alt="أهوار العراق" class="landmark-image">
+                    <div class="landmark-content">
+                        <h3 class="landmark-title">أهوار العراق</h3>
+                        <p class="landmark-description">تمتد أهوار العراق على مساحة تتراوح بين 9000 و20000 كم مربع في جنوب العراق، وتعتبر من أكبر النظم البيئية الرطبة في غرب آسيا. تتميز بمناظرها الطبيعية الخلابة وتنوعها البيولوجي الفريد، وتعد موطناً للعديد من أنواع الطيور المهاجرة والأسماك.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p class="footer-text">اكتشف جمال وعراقة معالم العراق التاريخية والدينية والسياحية</p>
+            <p class="credits">© 2025 - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+</body>
+</html>
